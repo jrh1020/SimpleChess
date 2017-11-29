@@ -92,7 +92,7 @@ public class Board {
         if (alg.length() > 2)
             throw new IllegalArgumentException("Error: Board: toGeometricNotation(String): alg length > 2. alg = " + alg);
 
-        int x = (int)(alg.charAt(0) - 'a');
+        int x = alg.charAt(0) - 'a';
         int y = Integer.parseInt(alg.substring(1)) - 1;
         return new int[]{x, y};
     }
