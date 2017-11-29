@@ -1,5 +1,10 @@
 package chess.board.piece;
 
 public enum PieceType {
-    Null, Pawn, Rook, Knight, Bishop, Queen, King
+    Pawn, Rook, Knight, Bishop, Queen, King;
+
+    @Override
+    public String toString() {
+        return this.name().toLowerCase();
+    }
 }

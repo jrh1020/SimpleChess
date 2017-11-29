@@ -10,8 +10,8 @@ public abstract class Piece {
 
     // Private fields:
     private int x, y; // Location on board
-    private PieceType type = PieceType.Null; // Type of piece. Must be set in piece constructor
-    private PlayerColor color = PlayerColor.Null; // Piece color. Must be set in piece constructor
+    private PieceType type = null; // Type of piece. Must be set in piece constructor
+    private PlayerColor color = null; // Piece color. Must be set in piece constructor
     private List<String> moveList; // Retains a list of all the moves made on the board.
 
     // Basic piece constructor
